@@ -1,0 +1,40 @@
+<!doctype html> 
+<html> 
+
+	<head> 
+		<meta charset="utf-8"> 
+		<title>Jleehy Practice3</title> 
+	</head> 
+
+<body>
+    <h1>Practice 3</h1>
+    <form>
+        <label>Enter Password:</label>
+        <input type="text" id="password" />
+        <br />
+
+        <label>Confirm Password:</label>
+        <input type="text" id="confirm" />
+        <br />
+
+        <button type="button" onclick="verifyPasswords()">Verify Passwords</button>
+    </form>
+
+    <script>
+        function verifyPasswords() {
+            const password = document.getElementById("password").value;
+            const confirm = document.getElementById("confirm").value;
+
+            if (password.length < 8) {
+                alert("First password must be at least eight characters long.");
+            } else if (confirm.length < 8){
+				alert("Second password must be at least eight characters long.");
+			}else if (password !== confirm) {
+                alert("Passwords do not match.");
+            } else {
+                alert("Passwords match!");
+            }
+        }
+    </script>
+</body>
+</html>

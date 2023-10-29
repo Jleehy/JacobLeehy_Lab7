@@ -1,0 +1,13 @@
+body {
+  background-color: cornsilk;
+}
+
+h1 {
+  color: maroon;
+  text-shadow: 0 0 1px #FF0000, 0 0 20px #0000FF;
+}
+
+p {
+  color: sienna;
+  text-shadow: 0 0 0px #000000, 0 0 20px #0000FF;
+}
